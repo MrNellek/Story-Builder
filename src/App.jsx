@@ -13,7 +13,7 @@ function App() {
           <Routes>
             <Route path="/login" element={<Login />} />
             <Route path="/stories" element={<ProtectedRoute><Stories /></ProtectedRoute>} />
-            <Route path="/story/:storyId" element={<ProtectedRoute><Workspace /></ProtectedRoute>} />
+            <Route path="/workspace/:storyId" element={<ProtectedRoute><Workspace /></ProtectedRoute>} />
             <Route path="/" element={<Navigate to="/stories" />} />
           </Routes>
         </div>
