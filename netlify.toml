@@ -5,11 +5,13 @@
 [build.environment]
   NODE_VERSION = "18"
 
+# API routes for serverless functions
 [[redirects]]
   from = "/api/*"
   to = "/.netlify/functions/:splat"
   status = 200
 
+# SPA routing - redirect all routes to index.html for React Router
 [[redirects]]
   from = "/*"
   to = "/index.html"
